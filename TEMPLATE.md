@@ -33,7 +33,7 @@
 
 | Service | Available | Category |
 |---|---|---|
-{{range $service := sortServices .certifiedServices}}| {{$service.serviceName}} | {{$service.dateAvailable}} | {{$service.securityCategory}} |
+{{range $service := sortServices .certifiedServices}}| {{$service.serviceName}} | {{with (index $service "dateAvailable")}}{{.}}{{else}}Not specified{{end}} | {{$service.securityCategory}} |
 {{end}}
 **About service dates**
 
@@ -43,7 +43,7 @@
 
 {{range $service := sortServices .certifiedServices}}### {{$service.serviceName}}
 
-**FIPS 199 {{$service.securityCategory}} · Available since {{$service.dateAvailable}}**
+**FIPS 199 {{$service.securityCategory}}{{with (index $service "dateAvailable")}} · Available since {{.}}{{end}}**
 
 {{$service.serviceDescription}}
 {{if or (index $service "providerWebsite") (index $service "securityAdminGuideUrl") (index $service "supplementalDocuments")}}
@@ -86,11 +86,11 @@
 
 ## Certification Data documentation
 
-Statuses describe artifact availability, not certification status.
+Availability describes access to artifacts, not certification status.
 
-| Document | Human-readable | Machine-readable | Status |
-|---|---|---|---|
-{{range $item := .documentationOverview}}| {{if (index $item "url")}}[{{$item.name}}]({{$item.url}}){{else}}{{$item.name}}{{end}} ({{$item.rule}}) | {{$item.humanReadable}} | {{$item.machineReadable}} | {{$item.status}} |
+| Document | Formats | Availability |
+|---|---|---|
+{{range $item := .documentationOverview}}| {{if (index $item "url")}}[{{$item.name}}]({{$item.url}}){{else}}{{$item.name}}{{end}}{{if (index $item "rule")}} ({{$item.rule}}){{end}} | {{join $item.formats ", "}} | {{$item.availability}} |
 {{end}}
 ---
 
