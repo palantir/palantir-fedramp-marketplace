@@ -44,5 +44,7 @@ go run . --validate            # Validate JSON
 - `TEMPLATE.md` is the human-readable Markdown template for the data.
 - `package-information/*.md` is generated. Do not edit it directly.
 - `generate.go` renders the template with the JSON data.
-- `validate.go` validates the JSON against `FedRAMP/schemas@main`.
+- `validate.go` validates the JSON against the vendored FedRAMP schemas in `schemas/`.
+- `schemas/README.md` records the upstream schema revision and update instructions.
+- `vendor/` contains Go dependencies so generation and validation do not download modules. Refresh it with `go mod vendor` after updating dependencies.
 - `generate_test.go` and `validate_test.go` test public-information markdown synchronization and schema validation.

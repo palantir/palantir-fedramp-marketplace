@@ -10,10 +10,11 @@ plugins:
           linux-amd64: 84e520c1da1b94c4b593cbed81d080bf91eb01debd3c537f8e9bee21d743762f
           linux-arm64: 58bce386e8c7f44c5c12f90f1f64d8fe1b6e439e787b6557627658bac61b6d31
 environment:
-  # Revalidate against the schemas on main on every run, including in CI.
+  # Revalidate against the vendored schemas on every run, including in CI.
   GOFLAGS: -count=1 -v
 exclude:
   names:
     - '\..+'
   paths:
     - godel
+    - vendor
