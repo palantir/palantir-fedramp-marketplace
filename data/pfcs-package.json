@@ -8,7 +8,7 @@
     },
     "version": "1.0.0",
     "lastUpdated": "2026-09-21T00:00:00-06:00",
-    "sourceOfUpdate": "https://github.com/palantir/fedramp-marketplace"
+    "sourceOfUpdate": "https://github.com/palantir/palantir-fedramp-marketplace"
   },
   "serviceIdentification": {
     "providerName": "Palantir Technologies Inc.",
@@ -153,9 +153,9 @@
         "JSON"
       ],
       "availability": "Public",
-      "description": "Public human-readable README and machine-readable Marketplace JSON maintained in the same public repository.",
-      "url": "https://github.com/palantir/fedramp-marketplace/blob/main/PFCS/README.md",
-      "machineReadableUrl": "https://raw.githubusercontent.com/palantir/fedramp-marketplace/main/PFCS/PFCS-public-information.json"
+      "description": "Public human-readable package information and machine-readable Marketplace JSON generated from the same source data in the public repository.",
+      "url": "https://github.com/palantir/palantir-fedramp-marketplace/blob/develop/package-information/palantir-federal-cloud-service.md",
+      "machineReadableUrl": "https://raw.githubusercontent.com/palantir/palantir-fedramp-marketplace/develop/data/palantir-federal-cloud-service.json"
     },
     {
       "name": "Secure Configuration Guidance",
