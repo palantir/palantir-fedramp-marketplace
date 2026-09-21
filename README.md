@@ -2,7 +2,10 @@
 
 ## Package Information
 
-TODO: Add package JSON files to `data/`, generate their Markdown pages, and link them here.
+| Title | Information | Data |
+|---|---|---|
+| Palantir Federal Cloud Service (PFCS) | [Markdown](package-information/pfcs-package.md) | [JSON](data/pfcs-package.json) |
+| Palantir Federal Cloud Service – Supporting Services (PFCS-SS) | [Markdown](package-information/pfcs-ss-package.md) | [JSON](data/pfcs-ss-package.json) |
 
 ---
 
