@@ -127,7 +127,7 @@
     },
     {
       "serviceName": "Gotham Thick Client",
-      "serviceDescription": "Palantir Gotham's Titanium is the workspace for Intel-Ops fusion. Palantir Gotham integrates, enhances, and fuses data from many systems to enable decision making at every echelon and in every domain. Thick clients can be rolled out either through central infrastructure of the customer, or via a download from the Gotham landing page's Palantir Global Launcher link.",
+      "serviceDescription": "TEST! Palantir Gotham's Titanium is the workspace for Intel-Ops fusion. Palantir Gotham integrates, enhances, and fuses data from many systems to enable decision making at every echelon and in every domain. Thick clients can be rolled out either through central infrastructure of the customer, or via a download from the Gotham landing page's Palantir Global Launcher link.",
       "dateAvailable": "2019-12-18",
       "securityCategory": "High",
       "includedInMinimumAssessmentScope": true
