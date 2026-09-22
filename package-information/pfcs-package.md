@@ -115,7 +115,7 @@ The Foundry Data Connector supports connection with all types of source systems,
 | Field | Value |
 |---|---|
 | Next Ongoing Certification Report | 2026-10-20 |
-| Next Quarterly Review | 2026-10-28, 13:30:00-04:00 |
+| Next Quarterly Review | 2026-10-27, 13:30:00-04:00 |
 | Quarterly Review registration | [Request an invitation](mailto:FedRAMP-ISSO@palantir.com?subject=PFCS%20Quarterly%20Review%20registration). Request an invitation by email to FedRAMP-ISSO@palantir.com. |
 | OCR feedback and questions | [Email the PFCS FedRAMP ISSO](mailto:FedRAMP-ISSO@palantir.com?subject=PFCS%20Ongoing%20Certification%20Report%20feedback). Send feedback or questions about any Ongoing Certification Report by email to FedRAMP-ISSO@palantir.com. Questions and answers are published, anonymized and desensitized, in the Feedback Summary of a subsequent report. |
 
