@@ -106,7 +106,7 @@
     },
     {
       "serviceName": "Apollo Agent",
-      "serviceDescription": "Apollo upgrades components via a local agent which regularly queries the Apollo server to determine if any updates or configuration changes are available. Apollo maintains a catalog of versions of services from the artifact repository and is informed of the current state of service installations by agents running alongside those installations. Apollo applies upgrades subject to defined rules, automatically adjudicates releases by observing performance metrics and error states, and gradually rolls out releases that pass adjudication.",
+      "serviceDescription": "TEST Apollo upgrades components via a local agent which regularly queries the Apollo server to determine if any updates or configuration changes are available. Apollo maintains a catalog of versions of services from the artifact repository and is informed of the current state of service installations by agents running alongside those installations. Apollo applies upgrades subject to defined rules, automatically adjudicates releases by observing performance metrics and error states, and gradually rolls out releases that pass adjudication.",
       "dateAvailable": "2019-12-18",
       "securityCategory": "High",
       "includedInMinimumAssessmentScope": true
