@@ -12,7 +12,7 @@ The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the pur
 | FedRAMP ID | FR2434554673 |
 | UEI | FSY4LVSBGWB7 |
 | Service acronym | PFCS |
-| Service model | PaaS, SaaS |
+| Service model | PaaS, SaaS, IaaS |
 | Deployment model | Public Cloud |
 | Product website | [https://www.palantir.com/](https://www.palantir.com/) |
 
@@ -131,4 +131,4 @@ Availability describes access to artifacts, not certification status.
 
 ---
 
-Version 1.0.0 · last updated 2026-09-23T01:29:04Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-09-23T19:03:37Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).

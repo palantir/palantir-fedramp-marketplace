@@ -107,7 +107,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-09-23T01:29:04Z",
+    "lastUpdated": "2026-09-23T19:03:37Z",
     "responsibleAccountableOfficial": {
       "email": "FedRAMP-ISSO@palantir.com",
       "name": "PFCS ISSO",
@@ -167,7 +167,8 @@
     },
     "serviceType": [
       "PaaS",
-      "SaaS"
+      "SaaS",
+      "IaaS"
     ],
     "trustCenter": {
       "accessRequestInstructions": "Federal agencies and FedRAMP Recognized independent assessment services request access by contacting FedRAMP-ISSO@palantir.com with the requesting organization, the point of contact to be provisioned, and the authorization or assessment activity the access supports. Access persists for the duration of that activity.",
