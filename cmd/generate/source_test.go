@@ -14,7 +14,7 @@ func TestGenerationPipeline(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	template, err := os.ReadFile("TEMPLATE.md")
+	template, err := os.ReadFile(templatePath)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -50,7 +50,7 @@ func TestGenerationPipeline(t *testing.T) {
 	path := "data/example.yaml"
 	write(path, source)
 	write("data/other.yaml", source)
-	write("TEMPLATE.md", template)
+	write(templatePath, template)
 	if err := run(true, false); err == nil {
 		t.Fatal("missing JSON should fail check")
 	}
@@ -109,7 +109,7 @@ func TestGenerationPipeline(t *testing.T) {
 	if !bytes.Equal(initialJSON, read(jsonFile)) || !before.ModTime().Equal(after.ModTime()) {
 		t.Fatal("format-only change rewrote JSON")
 	}
-	write("TEMPLATE.md", append(template, []byte("\nTemplate update\n")...))
+	write(templatePath, append(template, []byte("\nTemplate update\n")...))
 	if err := run(true, false); err == nil {
 		t.Fatal("template edit should fail check")
 	}

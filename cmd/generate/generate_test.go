@@ -7,6 +7,14 @@ import (
 	"testing"
 )
 
+// Go runs package tests from cmd/generate; fixtures and generated files live at the repository root.
+func TestMain(m *testing.M) {
+	if err := os.Chdir("../.."); err != nil {
+		panic(err)
+	}
+	os.Exit(m.Run())
+}
+
 func TestReadmeMatchesTemplateAndJSON(t *testing.T) {
 	if err := run(true, false); err != nil {
 		t.Fatal(err)
@@ -74,10 +82,13 @@ func TestReadmeCheckAndUpdate(t *testing.T) {
 	}
 	for name, content := range map[string]string{
 		"generated/json/first.json":  `{"title":"Example"}`,
-		"TEMPLATE.md":                "# {{.title}}\n",
+		templatePath:                 "# {{.title}}\n",
 		"generated/json/second.json": `{"title":"Second"}`,
 		"README.md":                  "Maintained by hand\n",
 	} {
+		if err := os.MkdirAll(filepath.Dir(filepath.Join(dir, name)), 0755); err != nil {
+			t.Fatal(err)
+		}
 		if err := os.WriteFile(filepath.Join(dir, name), []byte(content), 0644); err != nil {
 			t.Fatal(err)
 		}

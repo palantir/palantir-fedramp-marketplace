@@ -1,4 +1,4 @@
-//go:generate go run .
+//go:generate go run . --root ../..
 
 package main
 
@@ -16,7 +16,7 @@ import (
 	"time"
 )
 
-var templatePath = "TEMPLATE.md"
+var templatePath = "cmd/generate/TEMPLATE.md"
 
 func dataFiles() ([]string, error) {
 	return filepath.Glob("data/*.yaml")
@@ -27,9 +27,14 @@ func outputPath(path string) string {
 }
 
 func main() {
+	root := flag.String("root", ".", "repository root containing data and generated directories")
 	check := flag.Bool("check", false, "check generated JSON and Markdown without modifying them")
 	validate := flag.Bool("validate", false, "validate the public information JSON")
 	flag.Parse()
+	if err := os.Chdir(*root); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
 	err := run(*check, *validate)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
