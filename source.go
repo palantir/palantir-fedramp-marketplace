@@ -81,14 +81,14 @@ func updateJSON(source string, check bool, now time.Time) error {
 	if err != nil && !errors.Is(err, os.ErrNotExist) {
 		return err
 	}
-	timestamp := now.UTC().Format(time.RFC3339Nano)
+	timestamp := now.UTC().Format(time.RFC3339)
 	var previous map[string]any
 	if json.Unmarshal(current, &previous) == nil {
 		if metadata, ok := previous["metadata"].(map[string]any); ok {
 			value, _ := metadata["lastUpdated"].(string)
 			delete(metadata, "lastUpdated")
-			if _, err := time.Parse(time.RFC3339, value); err == nil && reflect.DeepEqual(previous, data) {
-				timestamp = value
+			if parsed, err := time.Parse(time.RFC3339, value); err == nil && reflect.DeepEqual(previous, data) {
+				timestamp = parsed.UTC().Format(time.RFC3339)
 			}
 		}
 	}

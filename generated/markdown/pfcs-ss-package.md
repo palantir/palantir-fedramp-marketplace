@@ -272,4 +272,4 @@ Availability describes access to artifacts, not certification status.
 
 ---
 
-Version 1.0.0 · last updated 2026-09-23T01:13:46.672083Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-09-23T01:13:46Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).

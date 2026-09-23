@@ -57,7 +57,7 @@ func TestGenerationPipeline(t *testing.T) {
 	if _, err := os.Stat("generated"); !os.IsNotExist(err) {
 		t.Fatal("check wrote output")
 	}
-	first := time.Date(2026, 9, 22, 12, 0, 0, 0, time.UTC)
+	first := time.Date(2026, 9, 22, 12, 0, 0, 123456789, time.UTC)
 	if err := updateJSON(path, false, first); err != nil {
 		t.Fatal(err)
 	}
@@ -73,6 +73,17 @@ func TestGenerationPipeline(t *testing.T) {
 	jsonFile, markdown := jsonPath(path), outputPath(jsonPath(path))
 	initialJSON, initialMarkdown := read(jsonFile), read(markdown)
 	otherJSON := read("generated/json/other.json")
+	if !bytes.Contains(initialJSON, []byte(`"lastUpdated": "2026-09-22T12:00:00Z"`)) {
+		t.Fatal("JSON timestamp should use UTC whole seconds")
+	}
+	// Normalize existing fractional timestamps without assigning a new update time.
+	write(jsonFile, bytes.Replace(initialJSON, []byte("2026-09-22T12:00:00Z"), []byte("2026-09-22T08:00:00.123456789-04:00"), 1))
+	if err := updateJSON(path, false, first.Add(time.Hour)); err != nil {
+		t.Fatal(err)
+	}
+	if !bytes.Equal(initialJSON, read(jsonFile)) {
+		t.Fatal("timestamp normalization changed the recorded update time")
+	}
 	generated, err := loadDocument(jsonFile)
 	if err != nil {
 		t.Fatal(err)

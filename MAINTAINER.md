@@ -10,7 +10,7 @@ To update the information, edit the YAML in the data directory, the template, or
 ./godelw generate
 ```
 
-Do not include `$schema` or `metadata.lastUpdated` in YAML. Generation adds `$schema` using the schema selected in `validate.go`. It sets `metadata.lastUpdated` to the current UTC time when a package's data changes, and preserves it otherwise. YAML comments, formatting, and key order do not count as data changes. Template-only edits regenerate Markdown without changing the JSON timestamp. Each package is handled independently, and repeated generation leaves unchanged files untouched.
+Do not include `$schema` or `metadata.lastUpdated` in YAML. Generation adds `$schema` using the schema selected in `validate.go`. It sets `metadata.lastUpdated` to the current UTC time (RFC3339, whole seconds) when a package's data changes, and preserves it otherwise. YAML comments, formatting, and key order do not count as data changes. Template-only edits regenerate Markdown without changing the JSON timestamp. Each package is handled independently, and repeated generation leaves unchanged files untouched.
 
 `--check` verifies both generated formats without writing files. Generation also removes JSON and Markdown whose YAML source was deleted. The `generated/json` and `generated/markdown` directories are reserved for generated files.
 
