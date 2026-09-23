@@ -19,6 +19,7 @@ serviceProperties:
   serviceType:
     - PaaS
     - SaaS
+    - MaaS
   deploymentModel: Public Cloud
   trustCenter:
     repositoryType:
