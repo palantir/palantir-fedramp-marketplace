@@ -52,7 +52,7 @@ Analytics · Collaboration · Cybersecurity & Risk Management · Data Management
 
 **FIPS 199 High · Available since 2023-04-07**
 
-Palantir's Artificial Intelligence Platform (AIP) connects large language models (LLMs) and other AI technologies with customer data and operations within PFCS. AIP provides unified access to a range of open-source, self-hosted, and commercial LLMs through the AIP Model Catalog, and supports customer-connected models through its Bring Your Own Model capability. AIP includes tools for building, deploying, and managing models throughout their lifecycle, with LLM capacity management controls that allow administrators to govern model availability and resource consumption. The platform facilitates the conversion of LLM logic flows into secure, governed automations, with support for staging ontology edits for human review, while end-to-end traceability ensures rigorous auditing of all automation execution and downstream effects.
+TESTPalantir's Artificial Intelligence Platform (AIP) connects large language models (LLMs) and other AI technologies with customer data and operations within PFCS. AIP provides unified access to a range of open-source, self-hosted, and commercial LLMs through the AIP Model Catalog, and supports customer-connected models through its Bring Your Own Model capability. AIP includes tools for building, deploying, and managing models throughout their lifecycle, with LLM capacity management controls that allow administrators to govern model availability and resource consumption. The platform facilitates the conversion of LLM logic flows into secure, governed automations, with support for staging ontology edits for human review, while end-to-end traceability ensures rigorous auditing of all automation execution and downstream effects.
 
 ### Apollo
 
@@ -131,4 +131,4 @@ Availability describes access to artifacts, not certification status.
 
 ---
 
-Version 1.0.0 · last updated 2026-09-23T01:13:46Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-09-23T01:27:47Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
