@@ -7,6 +7,14 @@ import (
 	"testing"
 )
 
+// Go runs package tests from cmd/generate; fixtures and generated files live at the repository root.
+func TestMain(m *testing.M) {
+	if err := os.Chdir("../.."); err != nil {
+		panic(err)
+	}
+	os.Exit(m.Run())
+}
+
 func TestReadmeMatchesTemplateAndJSON(t *testing.T) {
 	if err := run(true, false); err != nil {
 		t.Fatal(err)
@@ -40,12 +48,12 @@ func TestNoData(t *testing.T) {
 					t.Fatal(err)
 				}
 			}
-			if _, err := os.Stat("package-information"); !os.IsNotExist(err) {
+			if _, err := os.Stat("generated/markdown"); !os.IsNotExist(err) {
 				t.Fatal("no-data run created output directory")
 			}
 		})
 	}
-	if err := os.WriteFile("data/invalid.json", []byte("{"), 0644); err != nil {
+	if err := os.WriteFile("data/invalid.yaml", []byte("{"), 0644); err != nil {
 		t.Fatal(err)
 	}
 	for _, validate := range []bool{false, true} {
@@ -56,20 +64,31 @@ func TestNoData(t *testing.T) {
 }
 
 func TestReadmeCheckAndUpdate(t *testing.T) {
+	render := func(check bool) error {
+		for _, path := range []string{"generated/json/first.json", "generated/json/second.json"} {
+			if err := updateReadme(path, check); err != nil {
+				return err
+			}
+		}
+		return nil
+	}
 	root, err := os.Getwd()
 	if err != nil {
 		t.Fatal(err)
 	}
 	dir := t.TempDir()
-	if err := os.Mkdir(filepath.Join(dir, "data"), 0755); err != nil {
+	if err := os.MkdirAll(filepath.Join(dir, "generated/json"), 0755); err != nil {
 		t.Fatal(err)
 	}
 	for name, content := range map[string]string{
-		"data/first.json":  `{"title":"Example"}`,
-		"TEMPLATE.md":      "# {{.title}}\n",
-		"data/second.json": `{"title":"Second"}`,
-		"README.md":        "Maintained by hand\n",
+		"generated/json/first.json":  `{"title":"Example"}`,
+		templatePath:                 "# {{.title}}\n",
+		"generated/json/second.json": `{"title":"Second"}`,
+		"README.md":                  "Maintained by hand\n",
 	} {
+		if err := os.MkdirAll(filepath.Dir(filepath.Join(dir, name)), 0755); err != nil {
+			t.Fatal(err)
+		}
 		if err := os.WriteFile(filepath.Join(dir, name), []byte(content), 0644); err != nil {
 			t.Fatal(err)
 		}
@@ -82,34 +101,34 @@ func TestReadmeCheckAndUpdate(t *testing.T) {
 			t.Error(err)
 		}
 	})
-	if err := run(true, false); err == nil {
+	if err := render(true); err == nil {
 		t.Fatal("missing output should fail check")
 	}
-	if _, err := os.Stat("package-information"); !os.IsNotExist(err) {
+	if _, err := os.Stat("generated/markdown"); !os.IsNotExist(err) {
 		t.Fatal("check created output directory")
 	}
-	if err := run(false, false); err != nil {
+	if err := render(false); err != nil {
 		t.Fatal(err)
 	}
-	second, err := os.ReadFile("package-information/second.md")
+	second, err := os.ReadFile("generated/markdown/second.md")
 	if err != nil || string(second) != "# Second\n" {
 		t.Fatalf("second output: %q, %v", second, err)
 	}
-	output := "package-information/first.md"
+	output := "generated/markdown/first.md"
 	if err := os.WriteFile(output, []byte("stale\n"), 0644); err != nil {
 		t.Fatal(err)
 	}
-	if err := run(true, false); err == nil || !strings.Contains(err.Error(), "-stale") {
+	if err := render(true); err == nil || !strings.Contains(err.Error(), "-stale") {
 		t.Fatalf("expected stale README error and diff, got %v", err)
 	}
 	current, err := os.ReadFile(output)
 	if err != nil || string(current) != "stale\n" {
 		t.Fatalf("check mode changed the README: %q, %v", current, err)
 	}
-	if err := run(false, false); err != nil {
+	if err := render(false); err != nil {
 		t.Fatal(err)
 	}
-	if err := run(true, false); err != nil {
+	if err := render(true); err != nil {
 		t.Fatal(err)
 	}
 	current, err = os.ReadFile(output)
@@ -124,7 +143,7 @@ func TestReadmeCheckAndUpdate(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if err := run(false, false); err != nil {
+	if err := render(false); err != nil {
 		t.Fatal(err)
 	}
 	after, err := os.Stat(output)

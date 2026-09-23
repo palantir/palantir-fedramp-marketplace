@@ -1,4 +1,4 @@
-//go:generate go run .
+//go:generate go run . --root ../..
 
 package main
 
@@ -13,22 +13,28 @@ import (
 	"sort"
 	"strings"
 	"text/template"
+	"time"
 )
 
-var templatePath = "TEMPLATE.md"
+var templatePath = "cmd/generate/TEMPLATE.md"
 
 func dataFiles() ([]string, error) {
-	return filepath.Glob("data/*.json")
+	return filepath.Glob("data/*.yaml")
 }
 
 func outputPath(path string) string {
-	return filepath.Join("package-information", strings.TrimSuffix(filepath.Base(path), ".json")+".md")
+	return filepath.Join("generated/markdown", strings.TrimSuffix(filepath.Base(path), ".json")+".md")
 }
 
 func main() {
-	check := flag.Bool("check", false, "check generated Markdown without modifying it")
+	root := flag.String("root", ".", "repository root containing data and generated directories")
+	check := flag.Bool("check", false, "check generated JSON and Markdown without modifying them")
 	validate := flag.Bool("validate", false, "validate the public information JSON")
 	flag.Parse()
+	if err := os.Chdir(*root); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
 	err := run(*check, *validate)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
@@ -41,15 +47,22 @@ func run(check, validate bool) error {
 	if err != nil {
 		return err
 	}
+	now := time.Now().UTC()
 	for _, path := range paths {
 		if validate {
-			err = validateDocument(path)
+			err = validateDocument(jsonPath(path))
 		} else {
-			err = updateReadme(path, check)
+			err = updateJSON(path, check, now)
+			if err == nil {
+				err = updateReadme(jsonPath(path), check)
+			}
 		}
 		if err != nil {
 			return fmt.Errorf("%s: %w", path, err)
 		}
+	}
+	if err := removeOrphans(paths, check || validate); err != nil {
+		return err
 	}
 	if validate {
 		fmt.Println("Valid JSON")
@@ -125,7 +138,7 @@ func updateReadme(path string, check bool) error {
 	if check {
 		return fmt.Errorf("%s is out of date. Run `./godelw generate`.\n%s", output, readmeDiff(output, current, expected))
 	}
-	if err := os.MkdirAll("package-information", 0755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(output), 0755); err != nil {
 		return err
 	}
 	if err := os.WriteFile(output, expected, 0644); err != nil {

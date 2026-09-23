@@ -1,6 +1,6 @@
 generators:
   readme:
-    go-generate-dir: .
+    go-generate-dir: cmd/generate
     gen-paths:
       paths:
-        - package-information
+        - generated
