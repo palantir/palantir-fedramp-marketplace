@@ -1,5 +1,7 @@
 # Palantir FedRAMP Package Information
 
+Public information about Palantir’s FedRAMP cloud services, available in human-readable Markdown and machine-readable JSON.
+
 ## Package Information
 
 | Title | Information | Data |
