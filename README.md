@@ -4,5 +4,5 @@
 
 | Title | Information | Data |
 |---|---|---|
-| Palantir Federal Cloud Service (PFCS) | [Markdown](package-information/pfcs-package.md) | [JSON](https://raw.githubusercontent.com/palantir/palantir-fedramp-marketplace/develop/data/pfcs-package.json) |
-| Palantir Federal Cloud Service – Supporting Services (PFCS-SS) | [Markdown](package-information/pfcs-ss-package.md) | [JSON](https://raw.githubusercontent.com/palantir/palantir-fedramp-marketplace/develop/data/pfcs-ss-package.json) |
+| Palantir Federal Cloud Service (PFCS) | [Markdown](generated/markdown/pfcs-package.md) | [JSON](https://raw.githubusercontent.com/palantir/palantir-fedramp-marketplace/develop/generated/json/pfcs-package.json) |
+| Palantir Federal Cloud Service – Supporting Services (PFCS-SS) | [Markdown](generated/markdown/pfcs-ss-package.md) | [JSON](https://raw.githubusercontent.com/palantir/palantir-fedramp-marketplace/develop/generated/json/pfcs-ss-package.json) |

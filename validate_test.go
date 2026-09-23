@@ -46,7 +46,7 @@ func TestSchemaValidation(t *testing.T) {
 	for _, path := range paths {
 		for _, tc := range cases {
 			t.Run(path+"/"+tc.name, func(t *testing.T) {
-				data, err := loadDocument(path)
+				data, err := loadDocument(jsonPath(path))
 				if err != nil {
 					t.Fatal(err)
 				}

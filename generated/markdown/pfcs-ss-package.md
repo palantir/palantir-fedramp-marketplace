@@ -266,10 +266,10 @@ Availability describes access to artifacts, not certification status.
 
 | Document | Formats | Availability |
 |---|---|---|
-| [Public offering information](https://github.com/palantir/palantir-fedramp-marketplace/blob/develop/package-information/pfcs-ss-package.md) (CDS-CSO-PUB) | Markdown, JSON | Public |
+| [Public offering information](https://github.com/palantir/palantir-fedramp-marketplace/blob/develop/generated/markdown/pfcs-ss-package.md) (CDS-CSO-PUB) | Markdown, JSON | Public |
 | [Secure Configuration Guidance](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.f8620325-fdb5-4b5e-843a-b53ce10db2ba) (SCG-CSO-RSC) | Human-readable | Offering-specific index available to authorized parties through the PFCS Documentation Repository. |
 | [PFCS-SS Certification Data](https://pfcsdocs.palantirgov.com/) | Human-readable, Machine-readable where required | Available to authorized parties through the PFCS Documentation Repository; additional CR26 materials are added as completed. |
 
 ---
 
-Version 1.0.0 · last updated 2026-09-21T00:00:00-06:00 · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-09-23T01:13:46.672083Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
