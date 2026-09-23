@@ -73,6 +73,13 @@ func TestGenerationPipeline(t *testing.T) {
 	jsonFile, markdown := jsonPath(path), outputPath(jsonPath(path))
 	initialJSON, initialMarkdown := read(jsonFile), read(markdown)
 	otherJSON := read("generated/json/other.json")
+	generated, err := loadDocument(jsonFile)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if generated["$schema"] != "https://fedramp.gov/schemas/"+schemaName {
+		t.Fatalf("unexpected generated schema: %v", generated["$schema"])
+	}
 	if !bytes.Contains(initialMarkdown, []byte(first.Format(time.RFC3339))) {
 		t.Fatal("Markdown missing generated timestamp")
 	}
@@ -162,6 +169,7 @@ func TestSourceYAML(t *testing.T) {
 		{"duplicate", "metadata: {}\nname: first\nname: second\n", false},
 		{"multiple documents", "metadata: {}\n---\nmetadata: {}\n", false},
 		{"managed timestamp", "metadata:\n  lastUpdated: 2026-09-22T12:00:00Z\n", false},
+		{"managed schema", "metadata: {}\n$schema: https://example.com/schema.json\n", false},
 		{"missing metadata", "name: example\n", false},
 		{"invalid", "metadata: [", false},
 	} {

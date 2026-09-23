@@ -64,6 +64,9 @@ func loadSource(path string) (map[string]any, error) {
 	if _, exists := metadata["lastUpdated"]; exists {
 		return nil, fmt.Errorf("metadata.lastUpdated is generated; remove it from the YAML source")
 	}
+	if _, exists := data["$schema"]; exists {
+		return nil, fmt.Errorf("$schema is generated; remove it from the YAML source")
+	}
 	return data, nil
 }
 
@@ -72,6 +75,7 @@ func updateJSON(source string, check bool, now time.Time) error {
 	if err != nil {
 		return err
 	}
+	data["$schema"] = "https://fedramp.gov/schemas/" + schemaName
 	output := jsonPath(source)
 	current, err := os.ReadFile(output)
 	if err != nil && !errors.Is(err, os.ErrNotExist) {
