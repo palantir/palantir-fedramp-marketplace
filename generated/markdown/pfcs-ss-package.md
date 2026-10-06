@@ -46,11 +46,11 @@ Analytics · Collaboration · Cybersecurity & Risk Management · Data Management
 | Knightscope Security Operations Center (KSOC) | 2025-12-19 | High |
 | KODE OS for Government | 2026-02-10 | High |
 | Legion | 2025-12-19 | High |
-| Method Platform | Not specified | High |
-| Oligo Runtime Security Platform | Not specified | High |
+| Method Platform | 2026-10-19 | High |
+| Oligo Runtime Security Platform | 2026-10-19 | High |
 | Picogrid Legion | 2025-12-19 | High |
 | Pryzm | 2025-07-25 | High |
-| Skydio Federal Cloud | Not specified | High |
+| Skydio Federal Cloud | 2026-10-19 | High |
 | SmartPM | 2025-07-25 | High |
 | SpecterOps BloodHound Enterprise | 2024-01-08 | High |
 | Streamline | 2025-12-19 | High |
@@ -156,14 +156,14 @@ Legion is a secure, modular agent orchestration platform that unifies mission da
 [Provider website](https://legionintel.com/) · [Security administration guide](https://trust.legionintel.com) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
 ### Method Platform
 
-**FIPS 199 High**
+**FIPS 199 High · Available since 2026-10-19**
 
 The Method Platform is composed of integrations (cloud, endpoint, identity/directory services, and vulnerability scanners), tools (network, vulnerability, web, OSINT scanning, and validation), guardrails (operator-in-the-loop and on-the-loop breakpoints and approval workflows for AI-generated plans), data management (transforming raw tool and integration data into linked knowledge across a cyber ontology), and AI agents (to recommend work or execute tasks end-to-end). Together, these capabilities enable autonomous or semi-autonomous cyber operations across on-premises, cloud, and edge environments.
 
 [Provider website](https://www.method.security/) · [Security administration guide](https://docs.method.security/platform/security-governance/security-administration-guide) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
 ### Oligo Runtime Security Platform
 
-**FIPS 199 High**
+**FIPS 199 High · Available since 2026-10-19**
 
 Oligo delivers runtime security for modern applications, cloud workloads, and AI systems. By analyzing application and infrastructure behavior in production, Oligo reveals what is actually running, identifies which vulnerabilities are truly exploitable, and detects malicious activity as it happens. Unlike traditional security tools that rely on static scanning or passive visibility, Oligo focuses on runtime behavior to detect real attacks and surgically block them at the first exploit attempt. This precision helps security teams cut through alert noise, protect critical systems from both known and unknown threats, and focus on the signals that matter most: what happens at runtime.
 
@@ -184,7 +184,7 @@ Pryzm is an AI-powered market-intelligence and relationship-management platform 
 [Provider website](https://www.pryzm.io/) · [Security administration guide](https://www.pryzm.io/legal/security-admin-guide-page-pryzm) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
 ### Skydio Federal Cloud
 
-**FIPS 199 High**
+**FIPS 199 High · Available since 2026-10-19**
 
 Skydio Federal Cloud is a software-as-a-service application used to manage and conduct unmanned aircraft operations. The system provides capabilities to organize users and roles, register and manage drones, and configure operational settings for flight activities. Operators use the system to plan and initiate drone flights, monitor flight status, view live and recorded video, and capture and review flight-associated data products. The system also provides historical records and audit-relevant information associated with user activity, device activity, and flight execution.
 
@@ -272,4 +272,4 @@ Availability describes access to artifacts, not certification status.
 
 ---
 
-Version 1.0.0 · last updated 2026-09-23T01:13:46Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-10-06T18:50:35Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
