@@ -181,7 +181,7 @@ certifiedServices:
     supplementalDocuments: https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9
   - serviceName: Oligo Runtime Security Platform
     serviceDescription: 'Oligo delivers runtime security for modern applications, cloud workloads, and AI systems. By analyzing application and infrastructure behavior in production, Oligo reveals what is actually running, identifies which vulnerabilities are truly exploitable, and detects malicious activity as it happens. Unlike traditional security tools that rely on static scanning or passive visibility, Oligo focuses on runtime behavior to detect real attacks and surgically block them at the first exploit attempt. This precision helps security teams cut through alert noise, protect critical systems from both known and unknown threats, and focus on the signals that matter most: what happens at runtime.'
-    dateAvailable: "2026-10-19"
+    dateAvailable: "2026-10-02"
     securityCategory: High
     includedInMinimumAssessmentScope: true
     providerWebsite: https://www.oligo.security/
