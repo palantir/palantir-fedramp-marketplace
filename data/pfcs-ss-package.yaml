@@ -173,7 +173,7 @@ certifiedServices:
     includedInMinimumAssessmentScope: true
   - serviceName: Method Platform
     serviceDescription: The Method Platform is composed of integrations (cloud, endpoint, identity/directory services, and vulnerability scanners), tools (network, vulnerability, web, OSINT scanning, and validation), guardrails (operator-in-the-loop and on-the-loop breakpoints and approval workflows for AI-generated plans), data management (transforming raw tool and integration data into linked knowledge across a cyber ontology), and AI agents (to recommend work or execute tasks end-to-end). Together, these capabilities enable autonomous or semi-autonomous cyber operations across on-premises, cloud, and edge environments.
-    dateAvailable: "2026-10-19"
+    dateAvailable: "2026-10-02"
     securityCategory: High
     includedInMinimumAssessmentScope: true
     providerWebsite: https://www.method.security/
@@ -181,7 +181,7 @@ certifiedServices:
     supplementalDocuments: https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9
   - serviceName: Oligo Runtime Security Platform
     serviceDescription: 'Oligo delivers runtime security for modern applications, cloud workloads, and AI systems. By analyzing application and infrastructure behavior in production, Oligo reveals what is actually running, identifies which vulnerabilities are truly exploitable, and detects malicious activity as it happens. Unlike traditional security tools that rely on static scanning or passive visibility, Oligo focuses on runtime behavior to detect real attacks and surgically block them at the first exploit attempt. This precision helps security teams cut through alert noise, protect critical systems from both known and unknown threats, and focus on the signals that matter most: what happens at runtime.'
-    dateAvailable: "2026-10-19"
+    dateAvailable: "2026-10-02"
     securityCategory: High
     includedInMinimumAssessmentScope: true
     providerWebsite: https://www.oligo.security/
@@ -205,7 +205,7 @@ certifiedServices:
     includedInMinimumAssessmentScope: true
   - serviceName: Skydio Federal Cloud
     serviceDescription: Skydio Federal Cloud is a software-as-a-service application used to manage and conduct unmanned aircraft operations. The system provides capabilities to organize users and roles, register and manage drones, and configure operational settings for flight activities. Operators use the system to plan and initiate drone flights, monitor flight status, view live and recorded video, and capture and review flight-associated data products. The system also provides historical records and audit-relevant information associated with user activity, device activity, and flight execution.
-    dateAvailable: "2026-10-19"
+    dateAvailable: "2026-10-02"
     securityCategory: High
     includedInMinimumAssessmentScope: true
     providerWebsite: https://www.skydio.com/

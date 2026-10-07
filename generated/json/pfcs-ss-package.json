@@ -136,7 +136,7 @@
       "supplementalDocuments": "https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9"
     },
     {
-      "dateAvailable": "2026-10-19",
+      "dateAvailable": "2026-10-02",
       "includedInMinimumAssessmentScope": true,
       "providerWebsite": "https://www.method.security/",
       "securityAdminGuideUrl": "https://docs.method.security/platform/security-governance/security-administration-guide",
@@ -146,7 +146,7 @@
       "supplementalDocuments": "https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9"
     },
     {
-      "dateAvailable": "2026-10-19",
+      "dateAvailable": "2026-10-02",
       "includedInMinimumAssessmentScope": true,
       "providerWebsite": "https://www.oligo.security/",
       "securityAdminGuideUrl": "https://oligocybersecurity.github.io/security-admin-guide/",
@@ -176,7 +176,7 @@
       "supplementalDocuments": "https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9"
     },
     {
-      "dateAvailable": "2026-10-19",
+      "dateAvailable": "2026-10-02",
       "includedInMinimumAssessmentScope": true,
       "providerWebsite": "https://www.skydio.com/",
       "securityAdminGuideUrl": "https://support.skydio.com/hc/en-us/articles/4402745186971-Getting-started-with-Skydio-Cloud",
@@ -287,7 +287,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-10-06T18:50:35Z",
+    "lastUpdated": "2026-10-07T17:05:17Z",
     "responsibleAccountableOfficial": {
       "email": "FedRAMP-ISSO@palantir.com",
       "name": "PFCS-SS ISSO",
