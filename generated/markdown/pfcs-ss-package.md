@@ -35,6 +35,7 @@ Analytics · Collaboration · Cybersecurity & Risk Management · Data Management
 |---|---|---|
 | Authifi | 2025-07-25 | High |
 | AutogenAI Federal | 2025-12-19 | High |
+| Belisar | 2025-07-25 | High |
 | Claude for Government (C4G) | 2025-05-12 | High |
 | Cognition | 2024-12-18 | High |
 | ConductorAI Conduit Platform | 2025-07-25 | High |
@@ -49,7 +50,6 @@ Analytics · Collaboration · Cybersecurity & Risk Management · Data Management
 | Method Platform | 2026-10-02 | High |
 | Oligo Runtime Security Platform | 2026-10-02 | High |
 | Picogrid Legion | 2025-12-19 | High |
-| Pryzm | 2025-07-25 | High |
 | Skydio Federal Cloud | 2026-10-02 | High |
 | SmartPM | 2025-07-25 | High |
 | SpecterOps BloodHound Enterprise | 2024-01-08 | High |
@@ -77,6 +77,13 @@ Authifi is an Authorization Management solution designed to help government and 
 AutogenAI is a Generative AI proposal management platform that supports capture through submission by automating research and sourcing, pWin go/no-go, requirement shredding and first-draft generation, reviewer workflows and compliance checks, and templated, auditable outputs for on-time, high-quality submissions.
 
 [Provider website](https://www.autogenai.com/) · [Security administration guide](https://trust.autogenai.com/?itemUid=672cf6e9-f36e-46d6-b84b-3b22abf40471&source=click) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
+### Belisar
+
+**FIPS 199 High · Available since 2025-07-25**
+
+Belisar (formerly Pryzm) provides the clearest view of federal growth, with an AI-native platform that brings together your CRM, global market intelligence, real-time opportunity data, and automated workflows tailored to your mission. Organizations across the public and private sector use Belisar as their unified system of record for government contracts and commercial deals — helping them see clearly, move faster, and win.
+
+[Provider website](https://www.pryzm.io/) · [Security administration guide](https://www.pryzm.io/legal/security-admin-guide-page-pryzm) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
 ### Claude for Government (C4G)
 
 **FIPS 199 High · Available since 2025-05-12**
@@ -175,13 +182,6 @@ Oligo delivers runtime security for modern applications, cloud workloads, and AI
 Legion is a cloud-native software built to provide platform-agnostic infrastructure for command and control capabilities.
 
 [Provider website](https://www.picogrid.com/) · [Security administration guide](https://docs.picogrid.com/update/reference/admins-guide) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
-### Pryzm
-
-**FIPS 199 High · Available since 2025-07-25**
-
-Pryzm is an AI-powered market-intelligence and relationship-management platform specifically designed for the national-security ecosystem, offering capabilities like opportunity search, budget intelligence, and contextual CRM. The platform streamlines financial, contract, and project management.
-
-[Provider website](https://www.pryzm.io/) · [Security administration guide](https://www.pryzm.io/legal/security-admin-guide-page-pryzm) · [Supplemental documents](https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9)
 ### Skydio Federal Cloud
 
 **FIPS 199 High · Available since 2026-10-02**
@@ -272,4 +272,4 @@ Availability describes access to artifacts, not certification status.
 
 ---
 
-Version 1.0.0 · last updated 2026-10-07T17:05:17Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-10-07T19:21:56Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
