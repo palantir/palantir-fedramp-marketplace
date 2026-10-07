@@ -195,9 +195,9 @@ certifiedServices:
     providerWebsite: https://www.picogrid.com/
     securityAdminGuideUrl: https://docs.picogrid.com/update/reference/admins-guide
     includedInMinimumAssessmentScope: true
-  - serviceName: Pryzm
+  - serviceName: Belisar
     supplementalDocuments: https://pfcsdocs.palantirgov.com/workspace/compass/view/ri.compass.main.folder.0e46fd1b-8fad-4f11-9481-e7ef19abc0d9
-    serviceDescription: Pryzm is an AI-powered market-intelligence and relationship-management platform specifically designed for the national-security ecosystem, offering capabilities like opportunity search, budget intelligence, and contextual CRM. The platform streamlines financial, contract, and project management.
+    serviceDescription: Belisar (formerly Pryzm) provides the clearest view of federal growth, with an AI-native platform that brings together your CRM, global market intelligence, real-time opportunity data, and automated workflows tailored to your mission. Organizations across the public and private sector use Belisar as their unified system of record for government contracts and commercial deals — helping them see clearly, move faster, and win.
     dateAvailable: "2025-07-25"
     securityCategory: High
     providerWebsite: https://www.pryzm.io/
