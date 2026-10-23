@@ -9,7 +9,124 @@ serviceIdentification:
   providerName: Palantir Technologies
   serviceName: Palantir Federal Cloud Service – Supporting Services (PFCS-SS)
   serviceAcronym: PFCS-SS
-  serviceDescription: PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS' Kubernetes infrastructure and leverage PFCS' management plane services.
+  serviceDescription: |-
+    PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS' Kubernetes infrastructure and leverage PFCS' management plane services.
+
+    ## Certified Service Details
+
+    All services listed below are included in the PFCS-SS Minimum Assessment Scope at the High security category.
+
+    ### [Authifi](https://axleinfo.com/)
+
+    Authifi is an Authorization Management solution designed to help government and highly regulated organizations secure access to their most sensitive applications and data.
+
+    Engineered from the ground up for healthcare, medical research and biopharma environments, Authifi includes identity and access management (IAM), ensuring that the right users get the right access, at the right time, for the right reasons—while automatically enforcing compliance with federal and industry cybersecurity standards.
+
+    ### [AutogenAI Federal](https://www.autogenai.com/)
+
+    AutogenAI is a Generative AI proposal management platform that supports capture through submission by automating research and sourcing, pWin go/no-go, requirement shredding and first-draft generation, reviewer workflows and compliance checks, and templated, auditable outputs for on-time, high-quality submissions.
+
+    ### [Belisar](https://www.pryzm.io/)
+
+    Belisar (formerly Pryzm) provides the clearest view of federal growth, with an AI-native platform that brings together your CRM, global market intelligence, real-time opportunity data, and automated workflows tailored to your mission. Organizations across the public and private sector use Belisar as their unified system of record for government contracts and commercial deals — helping them see clearly, move faster, and win.
+
+    ### [Claude for Government (C4G)](https://www.anthropic.com/)
+
+    C4G is Anthropic's AI chat assistant designed for highly regulated environments. Purpose-built to meet FedRAMP High security controls, it delivers Claude's advanced reasoning capabilities with enhanced security, administrative controls, and expanded context windows.
+
+    Claude for Government seamlessly integrates into existing workflows while maintaining the data protection and compliance standards required for critical business processes in government agencies and other security-conscious organizations.
+
+    ### [Cognition](https://cognition.com/)
+
+    Cognition provides a suite of AI coding tools to accelerate developer productivity, including Cognition Plugins for popular IDEs as well as its own AI-native IDE, Devin Desktop. Cognition leverages state-of-the-art AI models and advanced context-awareness capabilities to deliver tools like fast autocomplete, codebase-aware Chat, and agentic coding capabilities. Enterprise developer teams rely on Cognition to increase developer velocity, reduce onboarding times, and reduce tech debt.
+
+    Cognition was previously known as Windsurf and Codeium.
+
+    ### [ConductorAI Conduit Platform](https://www.conductorai.co/)
+
+    Ingests policy documents, prior approvals, and heuristics to orchestrate document review and approvals within the DOD, USG, IC, and other highly regulated entities. By atomizing policy statements into AI-enabled agents, rules, workflow steps, and document edits, the platform enables teams to accelerate and automate complex policy approvals.
+
+    The software is data-agnostic, model-independent, and can be adapted to deploy into various customer environments, including classified settings.
+
+    ### [Descope](https://www.descope.com/)
+
+    Descope is a drag-and-drop platform to help organizations manage all their external identities. The no-code/low-code solution helps organizations create, modify, and secure authentication and authorization journeys for end users, business customers, partner applications, and APIs and AI agents.
+
+    ### [Epsilon3](https://www.epsilon3.io/)
+
+    Epsilon3 is software for complex engineering, assembly, manufacturing, testing, and operations. Its solutions for advanced process control support planning, tracking, and analyzing a wide range of complex operations and procedures from manufacturing and testing through operations and maintenance.
+
+    ### [GovSignals](https://www.govsignals.ai/)
+
+    GovSignals.ai is an AI-driven platform designed to deliver real-time government intelligence and analytics from federal agencies and public records. Leveraging advanced generative and agentic AI, the platform identifies emerging trends, monitors policy shifts, and anticipates agency actions across federal and SLED procurement markets. For government contractors, GovSignals.ai automates the end-to-end proposal creation process.
+
+    For government agencies, GovSignals streamlines acquisition operations by providing intelligent intake, evaluation screening, and project management tools powered by AI.
+
+    ### [Grafana Federal Cloud](https://grafana.com/)
+
+    A fully managed, highly scalable observability platform, powered by Grafana Mimir for Prometheus metrics, Grafana Loki for logs, Grafana Tempo for traces, and Grafana, the de facto standard for data visualization.
+
+    ### [Hyperscience Hypercell](https://www.hyperscience.com/)
+
+    An AI platform with a proprietary model-based architecture that reads and understands all forms of content with 99% accuracy and 98.5% automation, scaling across the enterprise while ensuring auditability, governance, and security using private enterprise data.
+
+    ### [KODE OS for Government](https://www.kodelabs.com/)
+
+    KODE OS is a FedRAMP High authorized, cloud-native building operations platform deployed within the Palantir FedStart environment that enables federal, state, local, and government contractor organizations to securely centralize, monitor, control, and optimize distributed facility infrastructure through unified data integration, real-time analytics, role-based access control, and automated operational workflows.
+
+    ### [Knightscope Security Operations Center (KSOC)](https://www.knightscope.com/)
+
+    The Knightscope Security Operations Center (KSOC) is a user interface for law enforcement, security professionals, and remote monitoring teams to interact with autonomous systems utilized in physical security operations. The platform delivers both real-time visibility and investigative tools to help teams respond faster, reduce cost, and improve public safety.
+
+    ### [Legion](https://legionintel.com/)
+
+    Legion is a secure, modular agent orchestration platform that unifies mission data and workflows, deployable across classified, air-gapped, and edge environments.
+
+    ### [Method Platform](https://www.method.security/)
+
+    The Method Platform is composed of integrations (cloud, endpoint, identity/directory services, and vulnerability scanners), tools (network, vulnerability, web, OSINT scanning, and validation), guardrails (operator-in-the-loop and on-the-loop breakpoints and approval workflows for AI-generated plans), data management (transforming raw tool and integration data into linked knowledge across a cyber ontology), and AI agents (to recommend work or execute tasks end-to-end).
+
+    Together, these capabilities enable autonomous or semi-autonomous cyber operations across on-premises, cloud, and edge environments.
+
+    ### [Oligo Runtime Security Platform](https://www.oligo.security/)
+
+    Oligo delivers runtime security for modern applications, cloud workloads, and AI systems. By analyzing application and infrastructure behavior in production, Oligo reveals what is actually running, identifies which vulnerabilities are truly exploitable, and detects malicious activity as it happens.
+
+    Unlike traditional security tools that rely on static scanning or passive visibility, Oligo focuses on runtime behavior to detect real attacks and surgically block them at the first exploit attempt. This precision helps security teams cut through alert noise, protect critical systems from both known and unknown threats, and focus on the signals that matter most: what happens at runtime.
+
+    ### [Picogrid Legion](https://www.picogrid.com/)
+
+    Legion is a cloud-native software built to provide platform-agnostic infrastructure for command and control capabilities.
+
+    ### [Skydio Federal Cloud](https://www.skydio.com/)
+
+    Skydio Federal Cloud is a software-as-a-service application used to manage and conduct unmanned aircraft operations. The system provides capabilities to organize users and roles, register and manage drones, and configure operational settings for flight activities. Operators use the system to plan and initiate drone flights, monitor flight status, view live and recorded video, and capture and review flight-associated data products.
+
+    The system also provides historical records and audit-relevant information associated with user activity, device activity, and flight execution.
+
+    ### [SmartPM](https://www.smartpm.com/)
+
+    SmartPM is a cloud-native schedule analytics and risk intelligence platform purpose-built for the construction industry. It ingests raw scheduling data (.xer, .mpp, .xml, .ppx, .pp) and applies critical path method (CPM) logic, delay analysis frameworks, and earned value methodologies to surface risks, measure progress, and automate forensic-level oversight.
+
+    SmartPM supports international standards in scheduling and delay analysis, offering defensible insights for audit, compliance, and performance monitoring of capital projects.
+
+    ### [SpecterOps BloodHound Enterprise](https://specterops.io/)
+
+    See your organization from the attacker's view. BloodHound Enterprise is an Attack Path Management solution that continuously maps and quantifies identity Attack Paths in Active Directory and Azure.
+
+    ### [Streamline](https://www.valinor.co/)
+
+    Streamline is the first third-party product deployable through Palantir Foundry, offering secure, offline-capable mobile data collection integrated with Foundry's infrastructure and ontology, enabling non-technical users to easily create and manage authenticated or public data intake tools.
+
+    ### [Unstructured Platform](https://unstructured.io/)
+
+    The Unstructured Platform is an enterprise-grade ETL solution that automatically transforms complex, unstructured data into clean, structured data for GenAI applications.
+
+    ### [Valinor Harbor](https://www.valinor.co/)
+
+    HarborOS is a secure, modular software platform designed to enable distributed medical operations and data management in austere or disconnected environments. It integrates infrastructure monitoring, patient tracking, and logistics coordination within a FedRAMP-compliant cloud architecture to support Harbor Box facilities.
+
+    For the complete PFCS-SS public offering record, including service dates, provider websites, security administration guidance, supporting documentation, and certification information, see the [PFCS-SS public offering information](https://github.com/palantir/palantir-fedramp-marketplace/blob/develop/generated/markdown/pfcs-ss-package.md).
   certificationType: Rev5
   fedRampPackageId: FR2315464863
   website: https://www.palantir.com/offerings/fedstart/
