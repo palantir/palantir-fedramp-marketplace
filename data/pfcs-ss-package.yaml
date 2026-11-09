@@ -154,9 +154,9 @@ serviceProperties:
   nextQuarterlyReview:
     registrationUrl: mailto:FedRAMP-ISSO@palantir.com?subject=PFCS-SS%20Quarterly%20Review%20registration
     registrationInstructions: Request an invitation by email to FedRAMP-ISSO@palantir.com.
-    date: "2026-10-27"
-    startTime: 13:00:00-04:00
-  nextOngoingCertificationReportDate: "2026-10-20"
+    date: "2027-01-26"
+    startTime: 13:00:00-05:00
+  nextOngoingCertificationReportDate: "2027-01-19"
   businessCategory:
     - Analytics
     - Collaboration
@@ -169,10 +169,10 @@ serviceProperties:
     - Operations Management
     - Research
   ongoingCertificationReportSchedule:
-    - "2026-10-20"
     - "2027-01-19"
     - "2027-04-20"
     - "2027-07-20"
+    - "2027-10-19"
 contactInformation:
   - contactType: Security
     contactName: FedRAMP ISSO
