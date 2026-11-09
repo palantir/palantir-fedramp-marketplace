@@ -371,8 +371,8 @@ Software that PFCS-SS delivers separately for installation on agency systems and
 
 | Field | Value |
 |---|---|
-| Next Ongoing Certification Report | 2026-10-20 |
-| Next Quarterly Review | 2026-10-27, 13:00:00-04:00 |
+| Next Ongoing Certification Report | 2027-01-19 |
+| Next Quarterly Review | 2027-01-26, 13:00:00-05:00 |
 | Quarterly Review registration | [Request an invitation](mailto:FedRAMP-ISSO@palantir.com?subject=PFCS-SS%20Quarterly%20Review%20registration). Request an invitation by email to FedRAMP-ISSO@palantir.com. |
 | OCR feedback and questions | [Email the PFCS-SS FedRAMP ISSO](mailto:FedRAMP-ISSO@palantir.com?subject=PFCS-SS%20Ongoing%20Certification%20Report%20feedback). Send feedback or questions about any Ongoing Certification Report by email to FedRAMP-ISSO@palantir.com. Questions and answers are published, anonymized and desensitized, in the Feedback Summary of a subsequent report. |
 
@@ -388,4 +388,4 @@ Availability describes access to artifacts, not certification status.
 
 ---
 
-Version 1.0.0 · last updated 2026-10-23T17:34:13Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).
+Version 1.0.0 · last updated 2026-11-09T17:53:05Z · source https://github.com/palantir/palantir-fedramp-marketplace · responsible official PFCS-SS ISSO (Information System Security Officer, [FedRAMP-ISSO@palantir.com](mailto:FedRAMP-ISSO@palantir.com)).

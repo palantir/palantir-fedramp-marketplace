@@ -107,7 +107,7 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2026-09-23T01:29:04Z",
+    "lastUpdated": "2026-11-09T17:53:05Z",
     "responsibleAccountableOfficial": {
       "email": "FedRAMP-ISSO@palantir.com",
       "name": "PFCS ISSO",
@@ -141,20 +141,20 @@
       "Research"
     ],
     "deploymentModel": "Public Cloud",
-    "nextOngoingCertificationReportDate": "2026-10-20",
+    "nextOngoingCertificationReportDate": "2027-01-19",
     "nextQuarterlyReview": {
-      "date": "2026-10-27",
+      "date": "2027-01-26",
       "registrationInstructions": "Request an invitation by email to FedRAMP-ISSO@palantir.com.",
       "registrationUrl": "mailto:FedRAMP-ISSO@palantir.com?subject=PFCS%20Quarterly%20Review%20registration",
-      "startTime": "13:30:00-04:00"
+      "startTime": "13:30:00-05:00"
     },
     "ongoingCertificationReportFeedbackInstructions": "Send feedback or questions about any Ongoing Certification Report by email to FedRAMP-ISSO@palantir.com. Questions and answers are published, anonymized and desensitized, in the Feedback Summary of a subsequent report.",
     "ongoingCertificationReportFeedbackUrl": "mailto:FedRAMP-ISSO@palantir.com?subject=PFCS%20Ongoing%20Certification%20Report%20feedback",
     "ongoingCertificationReportSchedule": [
-      "2026-10-20",
       "2027-01-19",
       "2027-04-20",
-      "2027-07-20"
+      "2027-07-20",
+      "2027-10-19"
     ],
     "secureConfigurationGuidance": {
       "accessRequestInstructions": "Request access by contacting FedRAMP-ISSO@palantir.com.",
