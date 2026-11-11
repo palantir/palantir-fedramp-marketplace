@@ -3,12 +3,12 @@ plugins:
     - https://github.com/{{index GroupParts 1}}/{{index GroupParts 2}}/releases/download/v{{Version}}/{{Product}}-{{Version}}-{{OS}}-{{Arch}}.tgz
   plugins:
     - locator:
-        id: com.palantir.godel-generate-plugin:generate-plugin:1.50.0
+        id: com.palantir.godel-generate-plugin:generate-plugin:1.53.0
         checksums:
-          darwin-amd64: 8084425680712327d0de53324dcab773ce278b77d85b1c423e536ac48264049e
-          darwin-arm64: 7878512aff583db3c621f9ec8900f06d452306524cae07262e02f2656d7fca26
-          linux-amd64: 84e520c1da1b94c4b593cbed81d080bf91eb01debd3c537f8e9bee21d743762f
-          linux-arm64: 58bce386e8c7f44c5c12f90f1f64d8fe1b6e439e787b6557627658bac61b6d31
+          darwin-amd64: c601aba00d16a06322c32274346e4014e20c58484618335cb6357682a59b9c99
+          darwin-arm64: 8ba7b58987b434e7845ecfc2cc6383dce6a672aa75f0a6a5fd013ea32852c93b
+          linux-amd64: fd8bd92c6f5f6db359b31ed48ccb39319195a61740256d4069b17d4c6546a1d6
+          linux-arm64: dbb11d21d09efeabf3f53904dbc7691fbd8ca44ad03cf0f1a8288859b79a42af
 environment:
   # Revalidate against the vendored schemas on every run, including in CI.
   GOFLAGS: -count=1 -v
